@@ -1,0 +1,60 @@
+.container {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    margin-bottom: 1px;
+}
+
+.posicao {
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.posicao h4 {
+    color: white;
+    align-self: center;
+    font-size: 60pt;
+}
+
+.thumb {
+    height: 100%;
+}
+
+.thumb img {
+    min-width: 100%;
+}
+
+.textos {
+    min-width: 55%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    font-family: roboto;
+}
+
+.textos h1 {
+    padding: 0;
+}
+
+.textos h2 {
+    padding: 0;
+}
+
+.textos h3 {
+    padding: 0;
+}
+
+.foto {
+    opacity: 1;
+}
+
+.foto :hover {
+   opacity: 0.8;
+}
+

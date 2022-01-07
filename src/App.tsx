@@ -1,26 +1,19 @@
+// @ts-ignore
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Menu from '../src/components/Menu'
+import Lista from './components/Lista/Lista';
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Menu />
+      <Container maxWidth="md" style={{ marginTop: '30px' }}>
+
+        <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }}>
+          <Lista />
+        </Box>
+      </Container>
+    </>
   );
 }
-
-export default App;
