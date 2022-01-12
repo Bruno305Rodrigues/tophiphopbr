@@ -6,11 +6,6 @@ import { Link, useParams } from 'react-router-dom';
 import BasicMenu from '../Menu';
 import './index.css';
 
-
-
-
-
-
 export const Detalhes: React.FC = () => {
 
     const { id } = useParams();
@@ -22,7 +17,6 @@ export const Detalhes: React.FC = () => {
         fetch(url).then(response => {
             return response.json();
         }).then(data => {
-            console.log(data.items);
             setData(data.items);
 
         })
