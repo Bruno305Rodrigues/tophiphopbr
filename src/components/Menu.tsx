@@ -1,4 +1,3 @@
-import * as React from 'react';
 
 
 export default function BasicMenu() {
@@ -12,10 +11,12 @@ export default function BasicMenu() {
                 backgroundColor: 'black',
                 margin: 0,
                 display: 'flex',
-                justifyContent: 'center'
+                justifyContent: 'center',
+                marginBottom: '30px'
+
             }}
         >
-            <h1 style={{ color: 'white' }}>tophiphopbr.com</h1>
+            <h1 style={{ color: 'white', fontFamily: 'roboto' }}>tophiphopbr.com</h1>
         </div>
     );
 }
