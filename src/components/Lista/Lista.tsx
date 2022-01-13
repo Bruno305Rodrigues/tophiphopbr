@@ -5,6 +5,8 @@ import { Grid, Typography, Card, CardContent, CardHeader, CardMedia, Button } fr
 import moment from 'moment';
 import BasicMenu from '../Menu';
 
+import ReactGa from 'react-ga';
+
 interface ILista {
     title: string;
     videoId: string;
@@ -19,6 +21,12 @@ const Lista: React.FC = () => {
 
     const url = ('https://youtube.googleapis.com/youtube/v3/playlistItems?key=AIzaSyBX2R7dRN93BVREhtNlh1A55jlxE20FYoI&part=snippet&part=contentDetails&playlistId=PLQXFOW9goDGZLDJrW-pQaSIAByYurQ_a6&maxResults=5');
 
+
+    useEffect(() => {
+        ReactGa.initialize('G-KT0DJJLWZK');
+
+        ReactGa.pageview('/');
+    })
 
     useEffect(() => {
         fetch(url).then(response => {
